@@ -3,15 +3,16 @@ import { Dimensions, Image, StyleSheet } from 'react-native';
 
 //@ts-ignore
 import topo from '../../../assets/topo.png';
+import { IHeader } from '../../types/basketType';
 import { TextCustom } from '../TextCustom';
 
 const width = Dimensions.get('screen').width;
 
-export const Header = () => {
+export const Header = ({ title }: IHeader) => {
   return (
     <>
       <Image source={topo} style={styles.topo} />
-      <TextCustom style={styles.title}>Detalhe da cesta</TextCustom>
+      <TextCustom style={styles.title}>{title}</TextCustom>
     </>
   );
 };

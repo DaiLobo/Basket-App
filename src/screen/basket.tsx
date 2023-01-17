@@ -1,16 +1,27 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { ImageSourcePropType, StyleSheet, View } from 'react-native';
 
 import { Details } from '../components/Basket/Details';
 import { Header } from '../components/Basket/Header';
 
-export default function Basket() {
+type Props = {
+  header: { title: string };
+  details: {
+    name: string;
+    logoFarm: ImageSourcePropType;
+    farmName: string;
+    description: string;
+    price: string;
+  };
+};
+
+export default function Basket({ header, details }: Props) {
   return (
     <>
-      <Header />
+      <Header {...header} />
 
       <View style={styles.container}>
-        <Details />
+        <Details {...details} />
       </View>
     </>
   );

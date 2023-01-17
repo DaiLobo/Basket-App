@@ -5,16 +5,23 @@
  * @format
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
 
-import Basket from './src/screen/basket';
+import mock from './src/mocks/basket';
+import Basket from './src/screen/Basket';
+import { Splash } from './src/screen/Splash';
 
 function App() {
+  // const [loading, setLoading] = useState(false);
+
+  // if (loading === false) {
+  //   return <Splash setLoading={setLoading} />;
+  // }
   return (
     <SafeAreaView>
       <StatusBar />
-      <Basket />
+      <Basket {...mock} />
     </SafeAreaView>
   );
 }

@@ -1,26 +1,28 @@
 import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 
-// @ts-ignore
-import logo from '../../../assets/logo.png';
+import { IDetails } from '../../types/basketType';
 import { TextCustom } from '../TextCustom';
 
-export const Details = () => {
+export const Details = ({
+  name,
+  logoFarm,
+  farmName,
+  description,
+  price,
+}: IDetails) => {
   return (
     <>
-      <TextCustom style={styles.name}>Cesta de Verduras</TextCustom>
+      <TextCustom style={styles.name}>{name}</TextCustom>
 
       <View style={styles.farmView}>
-        <Image source={logo} style={styles.image} />
-        <TextCustom style={styles.farmName}>Jenny Jack Farm</TextCustom>
+        <Image source={logoFarm} style={styles.image} />
+        <TextCustom style={styles.farmName}>{farmName}</TextCustom>
       </View>
 
-      <TextCustom style={styles.description}>
-        Uma cesta com produtos selecionados cuidadosamente da fazenda direto
-        para sua cozinhas
-      </TextCustom>
+      <TextCustom style={styles.description}>{description}</TextCustom>
 
-      <TextCustom style={styles.price}>R$ 40,00</TextCustom>
+      <TextCustom style={styles.price}>{price}</TextCustom>
     </>
   );
 };
