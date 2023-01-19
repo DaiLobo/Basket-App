@@ -1,9 +1,5 @@
 # Basket-App
 
-<p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p>
-
 Aplicação feita como forma de estudo de React Native com base no curso da Alura. Nela é construida um aplicativo e-commerce de produtos naturais que se chama orgs, na qual contém uma Cesta de Verduras com uma lista para escolher os produtos e assim o usuário poderá clicar no botão para comprar e realizar a compra.
 
 Nela contêm uso de:
@@ -37,7 +33,7 @@ Siga o [Setting up the development environment](https://reactnative.dev/docs/env
     $ yarn
 
     # Iniciar o projeto
-    $ npx react-native run-android
+    $ yarn start
 ```
 
 ## 🛠️ Tecnologias
