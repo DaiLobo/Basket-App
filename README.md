@@ -15,7 +15,7 @@ Nela contêm uso de:
 
 Ter um celular físico ou virtual conectado ao computador
 
-# Para usar o Android Studio
+## 📖 Para usar o Android Studio
 
 Siga o [Setting up the development environment](https://reactnative.dev/docs/environment-setup).
 
