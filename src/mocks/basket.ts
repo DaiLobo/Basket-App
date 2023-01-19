@@ -16,29 +16,30 @@ const basket = {
     description:
       'Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinhas',
     price: 'R$ 40,00',
+    button: 'Comprar',
   },
   itens: {
-    titulo: 'Itens da cesta',
-    lista: [
+    title: 'Itens da cesta',
+    list: [
       {
-        nome: 'Tomate',
-        imagem: tomate,
+        name: 'Tomate',
+        image: tomate,
       },
       {
-        nome: 'Brócolis',
-        imagem: brocolis,
+        name: 'Brócolis',
+        image: brocolis,
       },
       {
-        nome: 'Batata',
-        imagem: batata,
+        name: 'Batata',
+        image: batata,
       },
       {
-        nome: 'Pepino',
-        imagem: pepino,
+        name: 'Pepino',
+        image: pepino,
       },
       {
-        nome: 'Abóbora',
-        imagem: abobora,
+        name: 'Abóbora',
+        image: abobora,
       },
     ],
   },

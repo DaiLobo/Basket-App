@@ -10,17 +10,21 @@ export interface IDetails {
   farmName: string;
   description: string;
   price: string;
+  button?: string;
+}
+
+export interface IItem {
+  name: string;
+  image: ImageSourcePropType;
 }
 
 export interface IItens {
   title: string;
-  list: {
-    name: string;
-    image: string;
-  }[];
+  list: IItem[];
 }
 
 export interface IBasket {
   header: IHeader;
   details: IDetails;
+  itens: IItens;
 }

@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, TextStyle } from 'react-native';
 
 type Props = {
-  children: React.ReactNode;
-  style: TextStyle;
+  children?: React.ReactNode;
+  style?: TextStyle;
 };
 
 export const TextCustom = ({ children, style }: Props) => {

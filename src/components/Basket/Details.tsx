@@ -1,7 +1,8 @@
 import React from 'react';
-import { Image, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 
 import { IDetails } from '../../types/basketType';
+import { ButtonCustom } from '../ButtonCustom';
 import { TextCustom } from '../TextCustom';
 
 export const Details = ({
@@ -10,6 +11,7 @@ export const Details = ({
   farmName,
   description,
   price,
+  button,
 }: IDetails) => {
   return (
     <>
@@ -23,6 +25,8 @@ export const Details = ({
       <TextCustom style={styles.description}>{description}</TextCustom>
 
       <TextCustom style={styles.price}>{price}</TextCustom>
+
+      <ButtonCustom name={button} />
     </>
   );
 };

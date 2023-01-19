@@ -5,12 +5,11 @@
  * @format
  */
 
-import React, { useState } from 'react';
+import React from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
 
 import mock from './src/mocks/basket';
 import Basket from './src/screen/Basket';
-import { Splash } from './src/screen/Splash';
 
 function App() {
   // const [loading, setLoading] = useState(false);
@@ -19,7 +18,7 @@ function App() {
   //   return <Splash setLoading={setLoading} />;
   // }
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <StatusBar />
       <Basket {...mock} />
     </SafeAreaView>
